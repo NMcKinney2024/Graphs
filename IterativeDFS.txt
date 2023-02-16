@@ -1,0 +1,7 @@
+1. Push first vertex to stack
+2. while(!stackIsEmpty)
+    v = stack.pop();
+    marked[v] = true;
+    for(int w : v.adj())
+        if(!marked[w])
+            stack.push(w);
